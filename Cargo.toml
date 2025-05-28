@@ -1,0 +1,23 @@
+[package]
+name = "alpha_phase"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rand = "0.9.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+clap = { version = "4", features = ["derive"] }
+
+[[example]]
+name = "xor"
+path = "examples/xor.rs"
+
+[[example]]
+name = "magister_salvatio"
+path = "examples/magister_salvatio.rs"
+
+[[bin]]
+name = "mininervus"
+path = "src/bin/cli.rs"
+
